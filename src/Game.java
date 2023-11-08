@@ -309,6 +309,7 @@ public class Game extends JPanel implements ActionListener, MouseListener {
             }
             if (mouseX >= 450 && mouseX <= 550 && mouseY >= 260 && mouseY <= 300){
                 gameState = GameState.START_MENU;
+                repaint();
             }
 
         } else if (gameState == GameState.GAMEOVER) {
